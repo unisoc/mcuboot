@@ -73,7 +73,7 @@ static void do_boot(struct boot_rsp *rsp)
     /* Disable the USB to prevent it from firing interrupts */
     usb_disable();
 #endif
-    __set_MSP(vt->msp);
+    //__set_MSP(vt->msp);
     ((void (*)(void))vt->reset)();
 }
 
