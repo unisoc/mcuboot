@@ -66,7 +66,7 @@ static void do_boot(struct boot_rsp *rsp)
                                      rsp->br_hdr->ih_hdr_size);
     irq_lock();
     sys_clock_disable();
-    __set_MSP(vt->msp);
+    //__set_MSP(vt->msp);
     ((void (*)(void))vt->reset)();
 }
 #else
