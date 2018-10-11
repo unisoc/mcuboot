@@ -28,6 +28,9 @@
 #if defined(CONFIG_SOC_FAMILY_KINETIS)
 #include "soc_family_kinetis.h"
 #endif
+#if defined(CONFIG_SOC_SERIES_UWP566X)
+#include "soc_family_uwp5.h"
+#endif
 #endif /* !defined(MCUBOOT_TARGET_CONFIG) */
 
 /*
